@@ -25,7 +25,7 @@
   "bugs": {
     "url": "https://github.com/Malaa-tech/root-jailbreak-detection-expo/issues"
   },
-  "author": "AlfayezDev <mohammed@alfayez.dev> (dependencies {  implementation 'com.github.kimchangyoun:rootbeerFresh:+'})",
+  "author": "AlfayezDev <mohammed@alfayez.dev>",
   "license": "MIT",
   "homepage": "https://github.com/Malaa-tech/root-jailbreak-detection-expo#readme",
   "dependencies": {},
