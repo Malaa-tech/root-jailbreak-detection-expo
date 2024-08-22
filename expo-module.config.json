@@ -1,0 +1,9 @@
+{
+  "platforms": ["ios", "android"],
+  "ios": {
+    "modules": ["RootJailbreakDetectionExpoModule"]
+  },
+  "android": {
+    "modules": ["expo.modules.rootjailbreakdetectionexpo.RootJailbreakDetectionExpoModule"]
+  }
+}
