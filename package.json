@@ -1,5 +1,5 @@
 {
-  "name": "root-jailbreak-detection-expo",
+  "name": "@malaa-tech/root-jailbreak-detection-expo",
   "version": "0.1.0",
   "description": "Root and jailbreak detection library",
   "main": "build/index.js",
