@@ -28,3 +28,20 @@ export const rootCheck = async (): Promise<RootCheckResult | null> => {
       }
     });
 };
+type JailbreakCheckResult = {
+  isJailbroken: boolean;
+};
+export const jailbreakCheck = async (): Promise<JailbreakCheckResult> => {
+  if (Platform.OS !== "ios") return { isJailbroken: false };
+  try {
+    const result: boolean =
+      await RootJailbreakDetectionExpoModule.detectJailbreak();
+    return { isJailbroken: result };
+  } catch (error) {
+    if (error instanceof Error) {
+      throw new Error(`Jailbreak detection failed: ${error.message}`);
+    } else {
+      throw new Error("Jailbreak detection failed with an unknown error");
+    }
+  }
+};

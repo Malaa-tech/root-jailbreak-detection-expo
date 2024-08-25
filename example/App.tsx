@@ -24,6 +24,14 @@ export default function App() {
         console.error("Error during root check:", error);
       });
   }, []);
+  RootJailbreakDetectionExpo.jailbreakCheck()
+    .then((result) => {
+      if(result.isJailbroken)
+      console.log("jailbreak", result);
+    })
+    .catch((err) => {
+      console.error("jailbreak", err);
+    });
   return (
     <View style={styles.container}>
       <Text>
