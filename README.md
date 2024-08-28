@@ -33,3 +33,9 @@ Run `npx pod-install` after installing the npm package.
 # Contributing
 
 Contributions are very welcome! Please refer to guidelines described in the [contributing guide]( https://github.com/expo/expo#contributing).
+
+# Licenses
+
+This library uses these open source libraries
+* [Rootbeerfresh](https://github.com/KimChangYoun/rootbeerFresh/tree/master) [Apache 2] for android root detection
+* [We copied the device ui from expo device](https://github.com/expo/expo/blob/sdk-51/packages/expo-device/ios/UIDevice.swift) [ MIT ], although it is possible that we added more to it here than how it is when the project started
