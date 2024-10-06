@@ -8,9 +8,10 @@ public class RootJailbreakDetectionExpoModule: Module {
         Name("RootJailbreakDetectionExpo")
 
         AsyncFunction("detectJailbreak") { (promise:Promise) in
-            let isJailbroken = UIDevice.current.isJailbroken
-            promise.resolve(isJailbroken)
-            return UIDevice.current.isJailbroken
+            let isUIDeviceJailbroken = UIDevice.current.isJailbroken
+            let isFridaJailbroken = FridaDetection.init().isFridaDetected
+            promise.resolve(isUIDeviceJailbroken || isFridaJailbroken)
+            return isUIDeviceJailbroken || isFridaJailbroken
         }
     }
 
