@@ -26,7 +26,6 @@ private fun performRootCheck(context: Context): RootCheckResult {
         RootItemResult("RW Paths", rootBeer.checkForRWPaths()),
         RootItemResult("Dangerous Props", rootBeer.checkForDangerousProps()),
         RootItemResult("Root via native check", rootBeer.checkForRootNative()),
-        RootItemResult("SE Linux Flag Disabled", !Utils.isSelinuxFlagInEnabled()),
         RootItemResult("Magisk Binary", rootBeer.checkForMagiskBinary()),
         RootItemResult("Magisk UDS", rootBeer.checkForMagiskNative())
     )
